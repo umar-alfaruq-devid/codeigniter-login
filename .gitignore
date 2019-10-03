@@ -1,0 +1,34 @@
+# vendor
+vendor
+
+# system
+system
+
+# assets
+assets
+
+# composer
+composer.json
+
+# html
+
+*.html
+
+# application
+application/*
+
+!application/config
+application/config/*
+!application/config/autoload.php
+!application/config/config.php
+!application/config/database.php
+!application/config/routes.php
+
+!application/controllers
+!application/models
+
+!application/views
+application/views/errors
+
+# index.php on root
+index.php
