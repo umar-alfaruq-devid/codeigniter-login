@@ -11,7 +11,7 @@
 		}
 
 		public function index() {
-			echo "string";
+			$this->load->view('auth/login');
 		}
 	}
 ?>
