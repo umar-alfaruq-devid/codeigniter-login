@@ -13,5 +13,12 @@
 		public function index() {
 			$this->load->view('auth/login');
 		}
+
+		public function loginAct() {
+			$user = $this->input->post('user');
+			$pass = $this->input->post('pass');
+			var_dump($_POST);
+		}
+
 	}
 ?>
