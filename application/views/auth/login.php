@@ -47,7 +47,7 @@
 							</div>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend"><span class="input-group-text"><i class="mdi mdi-lock d-inline-flex"></i></span></div>
-								<input type="text" name="user" id="" class="form-control" placeholder="Password">
+								<input type="text" name="pass" id="" class="form-control" placeholder="Password">
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 							<button type="reset" class="btn btn-danger">Reset</button>
