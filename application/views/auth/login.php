@@ -41,13 +41,19 @@
 					<div class="card-body">
 						<p class="text-center" style="font-size: 18px;">Login</p>
 						<form action="<?=base_url('loginAct');?>" method="post">
+							<?php if(form_error('user')): ?>
+								<small class="text-muted mb-2 d-flex">*<?=strip_tags(form_error('user'));?></small>
+							<?php endif; ?>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend"><span class="input-group-text"><i class="mdi mdi-face d-inline-flex"></i></span></div>
-								<input type="text" name="user" id="" class="form-control" placeholder="Username">
+								<input type="text" name="user" id="username" class="form-control" placeholder="Username" value="<?=set_value('user');?>">
 							</div>
+							<?php if(form_error('pass')): ?>
+								<small class="text-muted mb-2 d-flex">*<?=strip_tags(form_error('pass'));?></small>
+							<?php endif; ?>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend"><span class="input-group-text"><i class="mdi mdi-lock d-inline-flex"></i></span></div>
-								<input type="text" name="pass" id="" class="form-control" placeholder="Password">
+								<input type="text" name="pass" id="" class="form-control" placeholder="Password" value="<?=set_value('pass');?>">
 							</div>
 							<button type="submit" class="btn btn-primary">Submit</button>
 							<button type="reset" class="btn btn-danger">Reset</button>
