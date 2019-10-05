@@ -9,6 +9,7 @@
 		{
 			parent::__construct();
 			$this->load->library('form_validation');
+			$this->load->model('account/dataUser');
 		}
 
 		public function index() {
@@ -37,7 +38,12 @@
 			if($this->form_validation->run() == false) {
 				$this->load->view('auth/login');
 			} else {
-				echo "true";
+				$cekData = $this->dataUser->getUser($user, $pass);
+				if($cekData->num_rows() != false) {
+					echo "Login success";
+				} else {
+					echo "Login failed";
+				}
 			}
 		}
 
