@@ -36,7 +36,7 @@
 
 	<div class="container">
 		<div class="row d-flex justify-content-center mt-5">
-			<div class="col-md-4">
+			<div class="col-md-4 wrp">
 				<div class="card">
 					<div class="card-body">
 						<p class="text-center" style="font-size: 18px;">Daftar</p>
