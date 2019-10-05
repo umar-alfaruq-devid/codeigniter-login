@@ -42,7 +42,7 @@
 						<p class="text-center mt-3 text-success" style="font-size: 20px;"><?=$message;?></p>
 						<h1 class="text-center"><i style="font-size: 120px;" class="text-success mdi mdi-check-circle-outline"></i></h1>
 						<p class="text-center">
-							<button class="btn btn-success" id="getButton"><?=buttonText;?></button>
+							<button class="btn btn-success" id="getButton"><?=$buttonText;?></button>
 						</p>
 					</div>
 				</div>
