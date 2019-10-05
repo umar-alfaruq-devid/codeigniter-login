@@ -50,7 +50,23 @@
 					'created_at' => date('Y-m-d H:i:s')
 				);
 				$queryIsi = $this->insertUser->inserAccount('accounts', $data);
-				
+				if($queryIsi) {
+					$informasi = array(
+						'message' => 'Account is created',
+						'buttonText' => 'Go home',
+						'getLink' => 'home'
+					);
+
+					$this->load->view('alert/success', $data);
+				} else {
+					$informasi = array(
+						'message' => 'Some thing whent wrong',
+						'buttonText' => 'Signup',
+						'getLink' => 'signup'
+					);
+
+					$this->load->view('alert/err', $data);
+				}
 			}
 		}
 
