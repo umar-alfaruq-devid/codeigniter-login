@@ -9,6 +9,7 @@
 		{
 			parent::__construct();
 			$this->load->library('form_validation');
+			$this->load->model('account/insertUser');
 		}
 
 		public function index() 
@@ -43,7 +44,13 @@
 			if($this->form_validation->run() == false) {
 				$this->load->view('auth/signup');
 			} else {
-				echo "true";
+				$data = array(
+					'username' => $user,
+					'password' => $pass,
+					'created_at' => date('Y-m-d H:i:s')
+				);
+				$queryIsi = $this->insertUser->inserAccount('accounts', $data);
+				
 			}
 		}
 
