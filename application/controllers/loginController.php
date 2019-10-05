@@ -40,9 +40,19 @@
 			} else {
 				$cekData = $this->dataUser->getUser($user, $pass);
 				if($cekData->num_rows() != false) {
-					echo "Login success";
+					$informasi = array(
+						'message' => 'Login success',
+						'buttonText' => 'Go home',
+						'getLink' => 'home'
+					);
+					$this->load->view('alert/success', $informasi);
 				} else {
-					echo "Login failed";
+					$informasi = array(
+						'message' => 'Login failed!',
+						'buttonText' => 'Login',
+						'getLink' => 'login'
+					);
+					$this->load->view('alert/err', $informasi);
 				}
 			}
 		}
