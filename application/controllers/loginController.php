@@ -32,8 +32,8 @@
 			 /**
 			 * set peraturan validasi
 			 */
-			$this->form_validation->set_rules('user', 'Username', 'required|alpha_numeric|min_length[8]');
-			$this->form_validation->set_rules('pass', 'Password', 'required|alpha_numeric|min_length[8]');
+			$this->form_validation->set_rules('user', 'Username', 'required|alpha_numeric');
+			$this->form_validation->set_rules('pass', 'Password', 'required|alpha_numeric');
 			if($this->form_validation->run() == false) {
 				$this->load->view('auth/login');
 			} else {
