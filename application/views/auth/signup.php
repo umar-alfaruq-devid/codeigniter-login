@@ -40,7 +40,7 @@
 				<div class="card">
 					<div class="card-body">
 						<p class="text-center" style="font-size: 18px;">Daftar</p>
-						<form action="lorem.php" method="post">
+						<form action="<?=base_url('signupAct');?>" method="post">
 							<div class="input-group mb-3">
 								<div class="input-group-prepend"><span class="input-group-text"><i class="mdi mdi-face d-inline-flex"></i></span></div>
 								<input type="text" name="user" id="" class="form-control" placeholder="Username">
