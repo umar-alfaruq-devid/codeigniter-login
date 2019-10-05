@@ -60,3 +60,9 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] = 'loginController/index';
 $route['loginAct'] = 'loginController/loginAct';
+
+/**
+ * Signup routes
+ */
+
+$route['signup'] = 'signupController/index';
