@@ -2,7 +2,7 @@
 	/**
 	 * Inia adalah model untuk pengambilan data user/akun
 	 */
-	class dataUser extends CI_Controller
+	class dataUser extends CI_Model
 	{
 		public function getUser($user = false, $pass = false) {
 			$this->db->select('*');
