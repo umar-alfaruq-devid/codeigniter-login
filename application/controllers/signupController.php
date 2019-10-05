@@ -57,7 +57,7 @@
 						'getLink' => 'home'
 					);
 
-					$this->load->view('alert/success', $data);
+					$this->load->view('alert/success', $informasi);
 				} else {
 					$informasi = array(
 						'message' => 'Some thing whent wrong',
@@ -65,7 +65,7 @@
 						'getLink' => 'signup'
 					);
 
-					$this->load->view('alert/err', $data);
+					$this->load->view('alert/err', $informasi);
 				}
 			}
 		}
