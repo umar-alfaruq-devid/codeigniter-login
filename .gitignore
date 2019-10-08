@@ -7,14 +7,13 @@ system
 # assets
 assets
 
+
 # composer
 composer.json
 
 # html
 
 *.html
-
-*.sql
 
 # application
 application/*
